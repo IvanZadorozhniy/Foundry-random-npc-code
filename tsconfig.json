@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",  // Разрешает модули как в Node.js
+      "resolveJsonModule": true,   // Разрешает импорт JSON-файлов
+    },
+    "include": ["src"]
+  }
+  

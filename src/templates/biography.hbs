@@ -1,0 +1,33 @@
+<div class="biography">
+    <details open>
+        <summary><strong>Информация о семье</strong></summary>
+        
+            <p>Место где персонаж родился: {{placeOfBirth}}. 
+            {{parents.parentsAwareness}}.
+            Мать: {{parents.mother}}.
+            Отец: {{parents.father}}.
+            {{parents.parentsInfo}}.
+            {{parents.familyInfo}} воспитал этого персонажа.
+            Прожил своё детстве в: {{childhood.home}}. Жизнь была: {{childhood.lifeStyle}}.
+            {{childhood.memories}}.
+            Количество братьев и сестер: {{length siblings}}
+            <ul>
+                {{#each siblings}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            </p>
+    </details>
+
+    <hr>
+    <details open>
+        <summary><strong>Важные события в жизни</strong></summary>
+        <ul>
+            {{#each lifeEvents}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>Работа: {{profession}}</p>
+    </details>
+
+</div>

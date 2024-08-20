@@ -1,0 +1,59 @@
+<div class="appearance">
+
+    <details open>
+        <summary><strong>Внешность</strong></summary>
+        <p>
+            Раса: {{race}}.
+            Персонаж выглядит {{heightCategory details.height}} при этом {{bodyType details.height details.weight}}.
+            У него {{details.face.shape}} лицо с {{details.face.condition}} кожей.
+            На первый взгяд выглядит {{details.face.impression}}.
+            На лице заметны {{details.face.feature}}.
+            Цвет его глаз {{details.eyes.color}}, а оттенок кожи - {{details.skin.color}}.
+            У персонажа {{details.hair.color}}, {{details.hair.length}}, {{details.hair.style}}, {{details.hair.type}}
+            волосы.
+        </p>
+    </details>
+
+
+    <details open>
+        <summary><strong>Гардероб</strong></summary>
+        <ul>
+            {{#if (isClothes clothes.head) }}
+            <li>На голове: {{clothes.head}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.upperBody) }}
+            <li>На теле: {{clothes.upperBody}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.lowerBody) }}
+            <li>На ногах: {{clothes.lowerBody}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.hands) }}
+            <li>Руки: {{clothes.hands}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.shoes) }}
+            <li>Обувь: {{clothes.shoes}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.neck) }}
+            <li>На шее - {{clothes.neck}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.waist) }}
+            <li>На поясе - {{clothes.waist}}.</li>
+            {{/if}}
+            {{#if (isClothes clothes.outerwear)}}
+            <li>Его верхняя одежда - {{clothes.outerwear}}.</li>
+            {{/if}}
+        </ul>
+    </details>
+
+
+    <details open>
+        <summary><strong>Особенности</strong></summary>
+        <p>
+            {{details.visual_details}}.
+        </p>
+        <p>
+            {{details.additionalInfo}}
+        </p>
+    </details>
+
+</div>
