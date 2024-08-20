@@ -1,3 +1,5 @@
+## Module
+Module for foundry vvt with working macros can be found `https://github.com/IvanZadorozhniy/Foundryvtt-random-npc-rus`
 ### Completed Features
 
 - [x] Added the ability to generate a character's name.
