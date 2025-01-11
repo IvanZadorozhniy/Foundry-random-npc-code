@@ -10,3 +10,6 @@ Module for foundry vvt with working macros can be found `https://github.com/Ivan
 - [x] The randomizer now determines the character's age.
 - [x] Physical appearance is now generated with detailed descriptions.
 - [x] Added the ability to generate a complete HTML description of the character's appearance.
+
+## 11.01.2025 -Update?
+The macro works on DnD system v4 and tidy-sheet module v7. **Important** you should use it only for NPC characters. It doesn't work well on Player characters
